@@ -1,0 +1,75 @@
+/* 2. The Card Itself */
+.lessonCard {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  
+  /* CRITICAL FIX: Force a specific width */
+  width: 100%; 
+  max-width: 300px; 
+  box-sizing: border-box; /* Ensures padding doesn't make it wider than 350px */
+  
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.lessonCard:hover {
+  transform: translateY(-4px);
+}
+
+/* ... keep all your other CSS (.industry_container, .title, etc.) exactly as it was ... */
+
+.industryContainer {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.industryContainer h5 {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.title {
+  color: #f9fafb;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 24px 20px 12px 20px;
+  line-height: 1.4;
+}
+
+.author {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0 20px 24px 20px;
+}
+
+.openLessonButton {
+  background-color: transparent;
+  color: #f9fafb;
+  border: 1px solid #374151;
+  padding: 12px;
+  margin: 0 20px 20px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.openLessonButton:hover {
+  background-color: #1f2937;
+  border-color: #4b5563;
+}

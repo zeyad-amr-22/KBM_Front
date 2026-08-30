@@ -1,0 +1,62 @@
+/* 1. Overall Page Padding */
+.lessonsLearnedContainer {
+  padding: 40px 60px; /* Adds space around the edges of the screen */
+  max-width: 1400px;  /* Keeps content from getting too wide on huge screens */
+  margin: 0 auto;     /* Centers the content */
+}
+
+/* 2. Header Layout (Text on left, Button on right) */
+.headerSection {
+  display: flex;
+  justify-content: space-between; /* Pushes text to left, button to right */
+  align-items: flex-start;        /* Aligns them to the top */
+  margin-bottom: 40px;            /* Space between header and cards */
+  gap: 40px;                      /* Space between text and button */
+}
+
+.headerContent h1 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* 3. The Paragraph (Stops it from stretching) */
+.headerContent p {
+  color: #9ca3af; /* Light gray text */
+  max-width: 550px; /* CRITICAL: This limits the width of the paragraph */
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* 4. The Create Lesson Button */
+.createLessonButton {
+  background-color: #93c5fd; /* Light blue from the video */
+  color: #0f172a;            /* Dark text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;       /* Prevents the text inside from wrapping */
+  margin-top: 10px;          /* Slight offset to align nicely with the text block */
+  transition: background-color 0.2s;
+}
+
+.createLessonButton:hover {
+  background-color: #60a5fa; /* Slightly darker blue on hover */
+}
+
+/* 1. The Grid Container for the Page */
+.lessonsGrid {
+  display: grid;
+  /* This magic line creates columns that are at least 320px wide, and fit as many as possible */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+  gap: 20px; /* Space between cards */
+  padding: 40px;
+  max-width: 1200px; /* Keeps the grid centered like the video */
+  margin: 0 auto;
+}
+

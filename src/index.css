@@ -1,0 +1,8 @@
+/* Make sure the body has a dark background so the dark cards are visible */
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #030712; /*Very dark background like the video*/
+  font-family: sans-serif;
+}
+
