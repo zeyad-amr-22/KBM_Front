@@ -22,9 +22,9 @@ function OpenLessonPage(){
 
       <h5 className= {styles.author}>{author}</h5>
 
-      {/* <button className= {styles.openLessonButton} onClick= {() => <OpenLessons key = {key}/>}>Open Lesson</button> */}
+      
       <button className= {styles.openLessonButton} onClick= {OpenLessonPage}>Open Lesson</button>
-      {/* <OpenLessonButton key = {key}/> */}
+      
 
     </div>
   )
