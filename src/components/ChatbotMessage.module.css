@@ -1,0 +1,17 @@
+.chatbotMessageBubble {
+  align-self: flex-start; /* CRITICAL: Pushes the bubble to the left */
+  max-width: 80%;
+  
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border-top-left-radius: 2px; 
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  word-wrap: break-word;       /* Forces long words to break and wrap */
+  overflow-wrap: break-word;   /* Modern standard for wrapping */
+  white-space: pre-wrap;       /* Preserves spaces but allows wrapping */
+}
