@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Chatbot.module.css'
 import UserMessage from '../components/UserMessage'
 import ChatbotMessage from '../components/ChatbotMessage'
-import { Send } from "lucide-react";
+import { Send } from "lucide-react"
 
 const Chatbot = () => {
 
@@ -44,7 +44,7 @@ const Chatbot = () => {
       <div className= {styles.rightSide}>
         <div className= {styles.titleAndCloseBtn}>
           <h2>AI Assistant</h2>
-          <button className= {styles.closeBtn} onClick= {() => navigate('/')}> x </button>
+          <button className= {styles.closeBtn} onClick= {() => navigate(-1)}> x </button>
         </div>
 
         <div className= {styles.chatContent}>

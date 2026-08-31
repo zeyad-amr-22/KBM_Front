@@ -35,6 +35,7 @@ const CreateLessons = () => {
   {/* handling the submit btn to add the new lesson to the cardsList array so it gets rendered as a new card in the LessonsLearned page*/}
   function generateLesson(){
     cardsList.push({
+      idx: cardsList.length ,  // when adding a new lesson, the length is still the same before adding it. That's why it's still zero indexed.
       department: 'dept1',
       lessonTitle: title, 
       projectName: projectName,

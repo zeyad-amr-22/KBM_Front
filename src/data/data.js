@@ -1,5 +1,6 @@
 export const cardsList = [
     {
+        idx:0,
         department: 'dept1', 
         lessonTitle: 'Optimizing PLC logic',
         projectName: 'Project A',
@@ -8,6 +9,7 @@ export const cardsList = [
         description: 'This lesson focuses on optimizing PLC logic for better performance and efficiency in automation systems.'
     }, 
     {
+        idx:1,
         department: 'dept2', 
         lessonTitle: 'Improving wiring practices',
         projectName: 'Project B',
@@ -16,6 +18,7 @@ export const cardsList = [
         description: 'This lesson covers best practices for wiring in electrical systems, including safety measures and efficiency improvements.'
     }, 
     {
+        idx:2,
         department: 'dept2', 
         lessonTitle: 'Enhancing machine maintenance',
         projectName: 'Project C',

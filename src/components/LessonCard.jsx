@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link, useNavigate} from 'react-router-dom'
 import styles from './LessonCard.module.css'
+import OpenLessons from '../pages/OpenLessons.jsx'
 
-const LessonCard = ({industry, title, author}) => {
+const LessonCard = ({idx, industry, title, author}) => {
 
 const navigate = useNavigate();  /*hook used to navigate to a specific route */
 
 function OpenLessonPage(){
-  navigate('/OpenLesson')
+  navigate(`/OpenLesson/${idx}`)  /* passes the idx in the url */
 }
 
   return (
@@ -21,7 +22,9 @@ function OpenLessonPage(){
 
       <h5 className= {styles.author}>{author}</h5>
 
+      {/* <button className= {styles.openLessonButton} onClick= {() => <OpenLessons key = {key}/>}>Open Lesson</button> */}
       <button className= {styles.openLessonButton} onClick= {OpenLessonPage}>Open Lesson</button>
+      {/* <OpenLessonButton key = {key}/> */}
 
     </div>
   )

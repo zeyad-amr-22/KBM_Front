@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import { Bot } from 'lucide-react'
 import Main from './components/Main'
 import LessonsLearned from './pages/LessonsLearned'
 import CreateLessons from './pages/CreateLessons'
@@ -18,10 +19,10 @@ function App() {
         <Routes>
           <Route path= '/' element = {<LessonsLearned/>} />
           <Route path= '/CreateLesson' element = {<CreateLessons/>} />
-          <Route path= '/OpenLesson' element = {<OpenLessons/>} />
+          <Route path= '/OpenLesson/:idx' element = {<OpenLessons/>} />
           <Route path= '/Chatbot' element = {<Chatbot/>} />
         </Routes>
-        <Link className="chatbotButton" to = '/Chatbot'> Chatbot</Link>
+        <Link className="chatbotButton" to = '/Chatbot'><Bot/></Link>
       </BrowserRouter>
     </>
   )

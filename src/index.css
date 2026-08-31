@@ -2,7 +2,32 @@
 body {
   margin: 0;
   padding: 40px;
-  background-color: #030712; /*Very dark background like the video*/
+  background-color: #030712; /* Very dark background like the video */
   font-family: sans-serif;
 }
 
+/* --- Floating Chatbot Button --- */
+.chatbotButton {
+  position: fixed;       /* Pins it to the viewport, ignoring scroll */
+  bottom: 30px;          /* Distance from the bottom of the screen */
+  right: 30px;           /* Distance from the right of the screen */
+  z-index: 1000;         /* Ensures it stays on top of all other elements */
+  
+  /* Styling to make it a nice circular floating button */
+  background-color: #3b82f6; /* Bright blue matching your theme */
+  color: white;
+  padding: 16px;             /* Creates the circular size around the icon */
+  border-radius: 50%;        /* Makes it a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;     /* Removes the default link underline */
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); /* Adds a glowing drop shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover effect for a nice interactive feel */
+.chatbotButton:hover {
+  background-color: #2563eb; /* Slightly darker blue */
+  transform: scale(1.1);     /* Slightly enlarges the button */
+}

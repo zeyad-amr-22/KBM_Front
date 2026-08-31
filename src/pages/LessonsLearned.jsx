@@ -28,8 +28,8 @@ const LessonsLearned = () => {
 
 
           <div className={styles.lessonsGrid}>
-            {cardsList.map((card, index) => (
-              <LessonCard Key = {index} industry = {card.industry} title = {card.lessonTitle} author = {card.author}/>
+            {cardsList.map((card, _) => (
+              <LessonCard idx = {card.idx} industry = {card.industry} title = {card.lessonTitle} author = {card.author}/>
             ))}
           </div>
 
